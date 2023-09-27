@@ -9,7 +9,7 @@ body * {
 }
 
 header {
-  background: url(/assets/img/MaReLanding.jpg) no-repeat center;
+  background: url(/mare/assets/img/MaReLanding.jpg) no-repeat center;
   background-size: cover;
   background-position: 30% center;
   height: calc(100vh - 30px);
