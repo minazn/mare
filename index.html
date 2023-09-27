@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maracatu Renascente</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="hamburger">
+        <span></span>
+        <span class="mid"></span>
+        <span></span>
+    </div>
+    <div id="banner"></div>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Band</a></li>
+            <li><a href="">Concerts</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img id="logo" src="assets/img/MaReSticker.png" alt="MaRe Logo"/>
+        <div id="mare">
+            <h1 class="animate-red" id="maracatu">
+                Ma<span class="white">r</span><span>a</span><span>c</span><span>a</span><span>t</span><span>u</span>
+            </h1>
+            <h2 class="animate-blue" id="renascente">
+                Re<span>n</span><span>a</span><span>s</span><span>c</span><span class="white">e</span><span>n</span><span>t</span><span>e</span>
+            </h2>
+        </div>
+        
+        <button aria-describedby="upcoming"><a href="#upcoming">Upcoming Gigs</a></button>
+        <span id="upcoming"></span>       
+    </header>
+    <main>
+        <div class="emphasize" >
+            <h1 class="big">Concert</h1>
+            <h2 class="title">Upcoming</h2>
+            <div class="item">
+                <p>26.10.2023, 20:00</p>
+                <h6>Fania Live, Gürtellinie 22-23, 1080 Wien</h6>
+            </div>
+        </div>
+        <section class="video-wrap">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/8zDg9JkjIOo?si=vRyguBH7KBD19tk4?&mute=1&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="description">
+                <h2><span class="red"> We A</span><span class="blue">re</span></h2>
+                <p><strong>Musical direction:</strong> Patrick Huter</p>
+                <ul>
+                    <li>Anna Rosenkranz | Abê, Alfaia, Vocals</li>
+                    <li>Daniel Piringer | Alfaia</li>
+                    <li>David Bergstötter | Alfaia, Gonguê</li>
+                    <li>Jordan Brusenbauch | Caixa</li>
+                    <li>Karin Weinmeister | Abê, Alfaia, Apito, Gonguê, Mineiro, Vocals</li>
+                    <li>Lena Kastner | Abê, Alfaia, Gonguê, Mineiro, Vocals</li>
+                    <li>Neslihan Minaz | Alfaia</li>
+                    <li>Nicolai Toth | Alfaia, Vocals</li>
+                    <li>Patrick Huter | Abê, Alfaia, Atabaque, Apito, Caixa, Gonguê, Mineiro, Vocals</li>
+                    <li>Paul Gulewycz | Alfaia, Gonguê, Vocals</li>
+                    <li>Sophie Zehetmayer | Alfaia, Vocals</li>
+                </ul>
+                <button>more info</button>
+            </div>
+        </section>
+        <section id="weplayed">
+            <h2><span class="red">We pla</span><span class="blue">yed</span></h2>
+            <!--p id="contact-bookings"><a title="Maracatu booking">Contact for booking</a></p-->
+            <div id="concerts-wrap" class="relative">
+                <ul id="year-list">
+                    <li class="y2023 active">2023</li>
+                    <li class="y2022">2022</li>
+                    <li class="y2021">2021</li>
+                    <li class="y2020">2020</li>
+                    <li class="y2019">2019</li>
+                    <li class="y2018">2018</li>
+                    <li class="y2017">2017</li>
+                    <li class="y2016">2016</li>
+                    <li class="y2015">2015</li>
+                    <li class="y2014">2014</li>
+                    <li class="y2013">2013</li>
+                    <li class="y2012">2012</li>
+                </ul>
+                <div id="y2023" class="active concert-list">
+                    <ul>
+                        <li>05.08. | <strong>Brazil Fest</strong>, Brno</li>
+                        <li>30.06. | <strong>Mondscheingassen Fešta</strong>, Neubau, Vienna</li>
+                        <li>30.06. | <strong>MuWi Fest</strong>, Campus AAKH, Vienna</li>
+                        <li>03.04. | <strong>12. Wiener RADpaRADe</strong>, Staatsoper, Vienna</li>
+                    </ul>
+                </div>
+                <div id="y2022" class="concert-list">
+                    <ul>
+                        <li>10.09. | <strong>Wedding Party</strong>(private), Carinthia</li>
+                        <li>06.08. | <strong>Muito axé - 10 Jahre MaRe</strong>, Sargfabrik, Vienna</li>
+                        <li>01.07. | <strong>MuWi Fest</strong>, Campus AAKH, Vienna</li>
+                        <li>18.06. | <strong>Gleichklangfest</strong>, Alsergrund, Vienna</li>
+                        <li>03.04. | <strong>11. Wiener RADpaRADe</strong>, Urania, Vienna</li>
+                    </ul>
+                </div>
+                <div id="y2021" class="concert-list">
+                    <ul>
+                        <li>17.11. | Bird Release-Party (cancelled), Fania Live, Vienna</li>
+                        <li>27.10. | <strong>20 Jahre JobTRANSFAIR</strong>, Odeon, Vienna</li>
+                        <li>22.09. | <strong>"Abend der offenen Gesellschaft"</strong>, Albert Schweizer Haus, Vienna</li>
+                        <li>17.09. | <strong>Gleichklangfest</strong>, Arne-Carlsson-Park, Vienna</li>
+                        <li>15.-17.07. | <strong>Linzer Pflasterspektakel </strong>, Linz</li>
+                        <li>02.07. | <strong>Mondscheingassen Fešta </strong>, Vienna</li>
+                        <li>03.04. | <strong>10. Wiener RADpaRADe</strong>, Urania, Vienna</li>
+                    </ul>
+                </div>
+                <div id="y2020" class="concert-list">
+                    <ul>
+                        <li>03.10. | <strong>4. Internationaler Kärnten Marathon</strong>, Region Feldkirch - Ossiacher See, Carinthia</li>
+                        <li>03.09. | Freihausviertelfest (cancelled) , Schleifmühlgasse, Vienna</li>
+                        <li>06.06. |  Simmeringer Straßenfest (cancelled), Vienna</li>
+                        <li>29.03. | 9. Wiener RADpaRADe (cancelled), Urania, Vienna</li>
+                        <li>24.01. | <strong>Spitting Ibex "Love Hate Fear Fate"</strong> (Album Release), Porgy & Bess, Vienna</li>
+                    </ul>
+                </div>
+                <div id="y2019" class="concert-list">
+                    <ul>
+                        <li>22.11. | <strong>MaRe 7 Anos</strong>, Fania Live, Vienna</li>
+                        <li>05.10. | <strong>Simmeringer Straßenfest</strong>, Odeon, Vienna</li>
+                        <li>22.09. | <strong>4. Internationaler Kärnten Marathon</strong>, Region Feldkirch - Ossiacher See, Carinthia</li>
+                        <li>02.-03.08. | <strong>SambaMania 2019</strong>, Senj, Croatia</li>
+                        <li>25.07. | <strong>PARTYCIPATION</strong>, Gänsendorf Süd</li>
+                        <li>28.06. | <strong>Romanistik- &amp; Musikwissenschafts-Fest</strong>, Campus AAKH, Vienna</li>
+                        <li>28.06. | <strong>Mondscheingassen Fešta</strong>, Vienna</li>
+                        <li>09.06. | <strong>Karneval der Kulturen</strong>, Berlin</li>
+                        <li>31.03. | <strong>8. Wiener RADpaRADe</strong>, Vienna</li>
+                        <li>12.01. | <strong>6 Jahre MaRe</strong>, Fania Live, Vienna</li>
+                    </ul>
+                </div>
+                <div id="y2018" class="concert-list">
+                    <ul>
+                        <li>10.11. | <strong>BrasilFest Vienna</strong>, Vienna</li>
+                        <li>06.10. | <strong>Simmeringer Straßenfest</strong>, Vienna</li>
+                        <li>29.09. | <strong>Höfefest</strong>, St. Pölten</li>
+                        <li>15.09. | <strong>STREETLIFE Festival 2018</strong>, Babenbergerstraße, Vienna</li>
+                        <li>09.08. | <strong>Wedding Party</strong> (private)</li>
+                        <li>27.-28.07. | <strong>SambaMania 2018</strong>, Senj, Croatia</li>
+                        <li>19.-21.07 | <strong>32. Linzer Pflasterspektakel</strong>, Linz</li>
+                        <li>30.06. | <strong>Freihausviertelfest</strong>, Schleifmühlgasse, Vienna</li>
+                        <li>29.06. | <strong>MuWi Fest</strong>, Campus AAKH (Hof 9), Vienna</li>
+                        <li>16.06. | <strong>Saturdance</strong>, Brunnenpassage, Vienna</li>
+                        <li>16.06. | <strong>StraßenKunstFest</strong>, Yppenplatz, Vienna</li>
+                        <li>02.06. | <strong>Simmeringer Straßenfest</strong>, Vienna</li>
+                        <li>26.05. | <strong>Südwind Straßenfestt</strong>, Campus AAKH (Hof 1), Vienna</li>
+                        <li>15.02. | <strong>Mandando Brasa Trio & Maracatú Renascente</strong>, Fania Live, Vienna</li>
+                    </ul>
+                </div>
+                <div id="y2017" class="concert-list">
+                    <ul>
+                        <li>25.11. | <strong>5 Jahre MaRe</strong>, Fania Live, Vienna</li>
+                        <li>10.11. | <strong>Café Olge Sanchez Release Party</strong>, Schwarzberg, Vienna</li>
+                        <li>02.09. | <strong>Encanta Brasil</strong>, Fania Live, Vienna</li>
+                        <li>28.-30.07 | <strong>SambaMania 2017</strong>, Senj, Croatia</li>
+                        <li>30.06. | <strong>MuWi Fest</strong>, Campus AAKH (Hof 9), Vienna</li>
+                        <li>30.06. | <strong>Mondscheingassen Fešta</strong>, Mondscheingasse, Vienna</li>
+                        <li>03.06. | <strong>Simmeringer Straßenfest</strong>, Vienna</li>
+                        <li>19.05. | <strong>¡Sonido Tropical!</strong>, Fania Live, Vienna</li>
+                        <li>02.04. | <strong>7. Wiener RADpaRADe</strong>, Vienna</li>
+                        <li>09.03. | <strong>Ethnofest</strong>, Fluc, Vienna</li>
+                    </ul>
+                </div>
+                <div id="y2016" class="concert-list">
+                    <ul>
+                        <li>17.12. | <strong>4 Jahre MaRe</strong>, Fania Live, Vienna</li>
+                        <li>11.11. | <strong>Wiener Rotkreuz Ball</strong>, Rathaus, Vienna</li>
+                        <li>29.10. | Kramladen, Vienna</li>
+                        <li>09.09. | <strong>Buskers Festival 2016</strong>, Karlsplatz , Vienna</li>
+                        <li>03.09. | <strong>Sommerfest Grellgasse</strong>, Vienna</li>
+                        <li>02.09. | <strong>100 Jahre Naschmarkt</strong>, Naschmarkt, Vienna</li>
+                        <li>28.-30.07 | <strong>SambaMania 2016</strong>, Senj, Croatia</li>
+                        <li>21.07. | <strong>PARTYCIPATION</strong>, Gänsendorf Süd</li>
+                        <li>16.07. | <strong>MARACATU RENASCENTE supporting EMERSOUND</strong>, Fania Live, Vienna</li>
+                        <li>16.07. | <strong>Sommerfest</strong>, Vinzenz Pauli, St. Pölten</li>
+                        <li>02.07. | <strong>Freihausviertelfest</strong>, Schleifmühlgasse, Vienna</li>
+                        <li>25.05. | <strong>Sonido Tropical</strong>, Kramladen, Vienna</li>
+                        <li>21.05. | <strong>StraßenKunstFest</strong>, Yppenplatz, Vienna</li>
+                        <li>04.03. | <strong>6. Wiener RADpaRADe</strong>, Praterstern, Vienna</li>
+                        <li>10.03. | <strong>Ethnofest</strong>, Fluc, Vienna</li>
+                    </ul>
+                </div>
+                <div id="y2015" class="concert-list">
+                    <ul>
+                        <li>11.12. | <strong>3 Jahre MaRe</strong>, Fania Live, Vienna</li>
+                        <li>12.-13.09. | <strong>STREETLIFE festival 2015</strong>, Babenbergerstraße , Vienna</li>
+                        <li>11.-13.09. | <strong>Buskers Festival 2015</strong>, Karlsplatz, Vienna</li>
+                        <li>24.-25.07 | <strong>SambaMania 2015</strong>, Senj, Croatia</li>
+                        <li>23.07 | <strong>Samba Festival 2015</strong>, Lopar , Croatia</li>
+                        <li>26.06. | <strong>Kunstgeschichte-Party</strong>, Campus AAKH (Hof 9) , Vienna</li>
+                        <li>21.06. | <strong>5. Wiener RADpaRADe</strong>, Ringstraße, Vienna</li>
+                        <li>19.06. | <strong>Ethnofestival</strong>, Campus AAKH (Hof 7), Vienna</li>
+                        <li>13.06. | <strong>Street Art Festival Brunnenmarkt</strong>, Yppenplatz, Vienna</li>
+                        <li>15.-16.05 | <strong>LINZFEST 2015</strong>, Donaupark, Linz</li>
+                        <li>18.04. | <strong>¡Sonido Tropical!</strong>, Fania Live, Vienna</li>
+                        <li>16.01. | <strong>Ethnofest</strong>, EKH, Vienna</li>
+                    </ul>
+                </div>
+                <div id="y2014" class="concert-list">
+                    <ul>
+                        <li>29.11. | <strong>Andy Lee's Birthdayparty</strong>, Kulturverein Einbaumöbel, Vienna</li>
+                        <li>21.11. | <strong>Album Celebration, support for The Puzzle People Project</strong>, TüWi, Vienna</li>
+                        <li>12.11. | <strong>Free your Mind! - Das PsychologieFest</strong>, WERK , Vienna</li>
+                        <li>22.09. | <strong>Rasen am Ring</strong>, Ringstraße , Vienna</li>
+                        <li>05.-07.09. | <strong>Buskers Festival 2014</strong>, Karlsplatz, Vienna</li>
+                        <li>05.09. | <strong>Street festival 2014</strong>, Reindorfgasse, Vienna</li>
+                        <li>24.07. | <strong>PARTYCIPATION</strong>, Gänsendorf Süd</li>
+                        <li>14.06. | <strong>Street Art Festival Brunnenmarkt</strong>, Yppenplatz, Vienna</li>
+                        <li>13.06. | <strong>Campusfest</strong>, Campus AAKH, Vienna</li>
+                        <li>08.06. | <strong>Nosso Jogo</strong>, Karlsplatz, Vienna</li>
+                        <li>23.05. | <strong>Ethnofest</strong>, Campus AAKH, Vienna</li>
+                        <li>23.05. | <strong>Sommerfest des Kindergarten & Hort der Uni Wien</strong>, Campus AAKH, Vienna</li>
+                        <li>16.-17.05 | <strong>LINZFEST 2015</strong>, Donaupark, Linz</li>
+                        <li>06.04. | <strong>4. Wiener RADpaRADe</strong>, Ringstraße, Vienna</li>
+                        <li>25.01. | <strong>Music For Malawi</strong>, Arena, Vienna</li>
+                        <li>18.01. | <strong>Masha's Farewell Party</strong> (private), Ost Bar, Vienna</li>
+                        <li>17.01. | <strong>Ethnofest</strong>, EKH, Vienna</li>
+                    </ul>
+                </div>
+                <div id="y2013" class="concert-list">
+                    <ul>
+                        <li>30.11. | <strong>Festa Meia Lua Inteira</strong>, Fania Live, Vienna</li>
+                        <li>28.11. | <strong>Soziologie-Fest</strong>, The Loft, Vienna</li>
+                        <li>16.11. | <strong>Dia da Consciencia Negra</strong>, Fania Live , Vienna</li>
+                        <li>02.11. | <strong>Bauchklang&Guests</strong>, Festspielhaus, St. Pölten</li>
+                        <li>18.10. | <strong>¡Sonido Tropical!</strong>, Fania Live , Vienna</li>
+                        <li>13.09. | <strong>Street festival 2013</strong>, Reindorfgasse, Vienna</li>
+                        <li>06.09. | <strong>Street festival</strong>, Ottakringer Straße, Vienna</li>
+                        <li>18.-20.07 | <strong>Pflasterspektakel Linz</strong>, Linz</li>
+                        <li>18.06. | <strong>MuWi Fest</strong>, Campus AAKH (Hof 9), Vienna</li>
+                        <li>15.06. | <strong>Street Art Festival Brunnenmarkt</strong>, Yppenplatz, Vienna</li>
+                        <li>16.05. | <strong>Ethnofest</strong>, Fluc, Vienna</li>
+                        <li>12.14. | <strong>¡Sonido Tropical!</strong>, WIRR Nachtcafe , Vienna</li>
+                        <li>31.01. | <strong>Local Heroes Vienna</strong>, Arena, Vienna</li>
+                        <li>17.01. | <strong>Ethnofest</strong>, Fluc, Vienna</li>
+                    </ul>
+                </div>
+                <div id="y2012" class="concert-list">
+                    <ul>
+                        <li>09.11. | <strong>Baile y Batuque</strong>, WIRR Nachtcafe, Vienna</li>
+                    </ul>
+                </div>
+                <div id="img-slider">
+                    <img src="/assets/img/ima_96261a4.jpeg" alt="Mondscheingassenfest 2023" class="active">
+                    <img src="/assets/img/MaRe2.jpg" alt="10 Jahre MaRe">
+                    <img src="/assets/img/MaRe3.jpg" alt="Porgy & Bess">
+                    <img src="/assets/img/MaRe4.jpg" alt="MaRe Band">
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a>info@m-renascente.at</a>
+            <a href="https://www.facebook.com/MaracatuRenascente/" title="Maracatu Renascente on facebook"><img src="/assets/img/Facebook_Logo_Primary.png" alt="Facebook Link"></a>
+            <a href="https://www.instagram.com/mare_maracaturenascente/" title="Maracatu Renascente on Instagram"><img src="/assets/img/insta_icon.png" alt="Instagram Link"></a>
+            <a href="https://www.youtube.com/@maracaturenascente" title="Maracatu Renascente on YouTube"><img src="/assets/img/yt_icon.png" alt="YouTube Link"></a>
+        </div>
+        <div class="policy">
+            <ul>
+                <li><a href="">Datenschutz</a></li>
+                <li><a href="">Impressum</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <script  src="https://code.jquery.com/jquery-3.7.1.min.js"   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="  crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script> 
+</body>
+</html>
