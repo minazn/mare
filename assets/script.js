@@ -55,6 +55,51 @@ $(document).ready(function(){
             $('#img-slider img:first-child').addClass('active')
         }
     },1800);
+
+    if (!($('#home').hasClass('active'))) {
+        $('header').addClass('none');
+        $('#logo').addClass('shrink');
+    }
+    if (window.pageYOffset > 0) {
+        $('#logo').addClass('shrink');
+    }
+
+    $('.nav li').on('click', (e)=>{
+        $('body').removeClass('navopen')
+        $('#logo').addClass('shrink');
+        $('.nav li').removeClass('active');
+        $(e.target).addClass('active');
+        $(e.target).parents('li').addClass('active');
+        // $(e.target).siblings().removeClass('active');
+        // $(e.target).parents('li').siblings().removeClass('active');
+
+        var thisAttribute = e.target.getAttribute('for');
+       $('#'+thisAttribute).siblings().removeClass('active');
+       $('#'+thisAttribute).addClass('active');
+        if (thisAttribute != 'concerts' && thisAttribute != 'home') {
+            $('header').addClass('none')
+        }else {
+            $('header').removeClass('none')
+        }
+        window.scrollTo(0,0);
+    });
+
+    $('#more-info').on('click', () =>{
+        $('.more-info-trigger').addClass('active');
+        $('.more-info-trigger').siblings().removeClass('active');
+        $('#band').siblings().removeClass('active');
+        $('#band').addClass('active');
+        $('header').addClass('none');
+        window.scrollTo(0,0);
+    });
+    $('#logo').on('click', ()=>{
+        $('.nav li.logo-trigger').addClass('active');
+        $('.nav li.logo-trigger').siblings().removeClass('active');
+        $('.content').removeClass('active');
+        $('#home').addClass('active');
+        $('header').removeClass('none');
+        window.scrollTo(0,0);
+    }); 
   
 }); 
 
