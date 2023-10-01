@@ -17,16 +17,17 @@
         <span></span>
     </div>
     <div id="banner"></div>
-    <nav>
+    <nav class="nav">
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Band</a></li>
-            <li><a href="">Concerts</a></li>
-            <li><a href="">Contact</a></li>
+            <li for="home" class="active logo-trigger">Home</li>
+            <li for="band" class="more-info-trigger">Band</li>
+            <li for="home"><a for="home" href="#weplayed">Concerts</a></li>
+            <li id="contact">Contact: <small>info@m-renascente.at</small></li>
         </ul>
     </nav>
+    <img id="logo" src="assets/img/MaReSticker.png" alt="MaRe Logo"/>
     <header>
-        <img id="logo" src="assets/img/MaReSticker.png" alt="MaRe Logo"/>
+        
         <div id="mare">
             <h1 class="animate-red" id="maracatu">
                 Ma<span class="white">r</span><span>a</span><span>c</span><span>a</span><span>t</span><span>u</span>
@@ -40,12 +41,13 @@
         <span id="upcoming"></span>       
     </header>
     <main>
+        <div id="home" class="content active">
         <div class="emphasize" >
             <h1 class="big">Concert</h1>
             <h2 class="title">Upcoming</h2>
             <div class="item">
                 <p>26.10.2023, 20:00</p>
-                <h6>Fania Live, Gürtellinie 22-23, 1080 Wien</h6>
+                <h5>Fania Live, Gürtellinie 22-23, 1080 Wien</h5>
             </div>
         </div>
         <section class="video-wrap">
@@ -55,7 +57,55 @@
             <div class="description">
                 <h2><span class="red"> We A</span><span class="blue">re</span></h2>
                 <p><strong>Musical direction:</strong> Patrick Huter</p>
-                <ul>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Anna Rosenkranz</td>
+                            <td>Abê, Alfaia, Vocals</td>
+                        </tr>
+                        <tr>
+                            <td>Daniel Piringer</td>
+                            <td>Alfaia</td>
+                        </tr>
+                        <tr>
+                            <td>David Bergstötter</td>
+                            <td>Alfaia, Gonguê</td>
+                        </tr>
+                        <tr>
+                            <td>Jordan Brusenbauch</td>
+                            <td>Caixa, Pandeiro</td>
+                        </tr>
+                        <tr>
+                            <td>Karin Weinmeister</td>
+                            <td>Abê, Alfaia, Apito, Gonguê, Mineiro, Vocals</td>
+                        </tr>
+                        <tr>
+                            <td>Lena Kastner</td>
+                            <td>Abê, Alfaia, Gonguê, Mineiro, Vocals</td>
+                        </tr>
+                        <tr>
+                            <td>Neslihan Minaz</td>
+                            <td>Alfaia</td>
+                        </tr>
+                        <tr>
+                            <td>Nicolai Toth</td>
+                            <td>Alfaia, Vocals</td>
+                        </tr>
+                        <tr>
+                            <td>Patrick Huter</td>
+                            <td>Abê, Alfaia, Atabaque, Apito, Caixa, Gonguê, Mineiro, Vocals</td>
+                        </tr>
+                        <tr>
+                            <td>Paul Gulewycz</td>
+                            <td>Alfaia, Gonguê, Vocals</td>
+                        </tr>
+                        <tr>
+                            <td>Sophie Zehetmayer</td>
+                            <td>Alfaia, Vocals</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--ul>
                     <li>Anna Rosenkranz | Abê, Alfaia, Vocals</li>
                     <li>Daniel Piringer | Alfaia</li>
                     <li>David Bergstötter | Alfaia, Gonguê</li>
@@ -67,12 +117,13 @@
                     <li>Patrick Huter | Abê, Alfaia, Atabaque, Apito, Caixa, Gonguê, Mineiro, Vocals</li>
                     <li>Paul Gulewycz | Alfaia, Gonguê, Vocals</li>
                     <li>Sophie Zehetmayer | Alfaia, Vocals</li>
-                </ul>
-                <button>more info</button>
+                </ul-->
+                <button id="more-info">more info</button>
             </div>
         </section>
         <section id="weplayed">
             <h2><span class="red">We pla</span><span class="blue">yed</span></h2>
+            <h6>and will continue</h6>
             <!--p id="contact-bookings"><a title="Maracatu booking">Contact for booking</a></p-->
             <div id="concerts-wrap" class="relative">
                 <ul id="year-list">
@@ -91,6 +142,7 @@
                 </ul>
                 <div id="y2023" class="active concert-list">
                     <ul>
+                        <li>26.10. | <strong>MaRe @ FaniaLive</strong> Fania Live, Vienna</li>
                         <li>05.08. | <strong>Brazil Fest</strong>, Brno</li>
                         <li>30.06. | <strong>Mondscheingassen Fešta</strong>, Neubau, Vienna</li>
                         <li>30.06. | <strong>MuWi Fest</strong>, Campus AAKH, Vienna</li>
@@ -252,27 +304,191 @@
                     </ul>
                 </div>
                 <div id="img-slider">
-                    <img src="/mare/assets/img/ima_96261a4.jpeg" alt="Mondscheingassenfest 2023" class="active">
-                    <img src="/mare/assets/img/MaRe2.jpg" alt="10 Jahre MaRe">
-                    <img src="/mare/assets/img/MaRe3.jpg" alt="Porgy & Bess">
-                    <img src="/mare/assets/img/MaRe4.jpg" alt="MaRe Band">
+                    <img src="/assets/img/ima_96261a4.jpeg" alt="Mondscheingassenfest 2023" class="active">
+                    <img src="/assets/img/MaRe2.jpg" alt="10 Jahre MaRe">
+                    <img src="/assets/img/MaRe3.jpg" alt="Porgy & Bess">
+                    <img src="/assets/img/MaRe4.jpg" alt="MaRe Band">
                 </div>
             </div>
 
 
         </section>
+    </div>
+
+    <div id="band" class="content">
+        <div class="head">
+            <div>
+                <h2><span class="red">We a</span><span class="blue">re</span> <span class="red">off-Beat and you can</span> <span class="blue">DANCE</span> <span class="red">to it</span></h2>
+                <p>
+                    Our repertoire is based on the Afro-Brazilian music culture called Maracatu, which developed in Pernambuco (North-East Brazil) and has its roots in the musical traditions of African slaves.
+                </p>
+                <p class="fleft">
+                    Maracatu RENASCENTE is not the traditional (Maracatu de Baque Virado), but the experimental form of this style.​
+        Our music is based on instruments like alfaia (wooden bass drum), abê (gourd-shaker), caixa (snare-drum), timbal (hand-drum), gonguê (iron bell) and mineiro (shaker).
+        By adding other instruments and traditional genres like coco, forró, ciranda - sometimes even capoeira performances are part of our shows - as well as our own musical backgrounds, our repertoire is growing all the time 
+                </p>
+            </div>
+            <!--div>
+                <img class="fright" src="/assets/img/MareKarin.jpg" alt="Karin in Brno">
+                <img src="/assets/img/brno1.jpg" alt="Konzert, Brno">
+            </div-->
+
+        </div>
+        <div id="bg-img" class="bg-img"></div>
+        <div class="member">
+            <div>
+                <h2><span class="red">Ann</span><span class="blue">a Rosenkranz</span></h2>
+            <h6>Abê, Alfaia, Vocals</h6>
+            <p>Anna ist eine unglaublich quirlige Person, die jede Probe mit ihrer lustigen Art bereichert. Primär ist sie an der Alfaia zu finden, oft leiht sie uns aber auch ihre tolle Stimme für die eine oder andere Nummer. Spontane zweite oder dritte Stimmen singt sie dank ihrer Kreativität und ihrem Können mühelos und mit Freude. Anna hat Rhythmik studiert, spielt Gitarre und Kontrabass. Letzteren spielt sie in der Formation Wirrbel. Wirbel ist auch tatsächlich ein gutes Wort um Anna zu beschreiben: Sie strahlt und hat Energie wie ein kunterbunter Wirbelsturm.</p>
+            </div>
+            <img src="/assets/img/profilfotos/anna.jpg" alt="Anna Rosenkranz" title="Anna Rosenkranz">
+            
+        </div>
+        <div class="member">
+            <div>
+                <h2><span class="red">Daniel Pi</span><span class="blue">ringer</span></h2>
+                <h6>Alfaia</h6>
+                <p>Daniel ist, wie er eben ist.</p>
+            </div>
+            <img src="assets/img/MaReSticker.png" alt="MaRe Logo">
+
+        </div>
+        <div class="member">
+            <div>
+                <h2><span class="red">Dav</span><span class="blue">id Bergstötter </span></h2>
+                <h6>Alfaia, Gonguê</h6>
+                <p>
+                    David würde selbst bei Anbruch der Sintflut mit dem Rad zur Probe kommen. 
+                    Obwohl eines unserer neuesten Mitglieder, ist er in Windeseile zu einem unverzichtbaren Bestandteil von MaRe geworden, der mit seinen pragmatischen Lösungen 
+                    schon so manche Banddiskussion erspart hat. Mit seiner musikalischen Flexibilität beherrscht er Alfaia, Gonguê und Shaker gleichermaßen und lässt neuerdings 
+                    auch am Gesangsmikro von sich hören. Und auch unsere MaRe-Gigs werden von David mit an Land gezogen und organisiert. Wenn er nicht gerade an seinem 
+                    Lieblingsgewässer (Donau) chillt, weiß er immer, welche Kinofilme gerade sehenswert sind und sendet die heißesten Konzert- und Partytipps in die Runde.
+                </p>
+            </div>
+            <img src="/assets/img/profilfotos/david.jpg" alt="David Bergstötter" title="David Bergstötter">
+        </div>
+        <div class="member">
+            <div>
+                <h2><span class="red">Jordan Brus</span><span class="blue">enbauch</span></h2>
+                <h6>Caixa, Pandeiro</h6>
+                <p>Felsenfest spielt Jordan die Beats auf seiner Caixa. Einem Instrument, 
+                    welchem er seit Beitritt der Band treu geblieben ist, entlockt er einen knackigen Groove und ist so ein Herzstück der Gruppe. 
+                    Beim Spiel auf der Caixa lässt Jordan die Sticks durch die Luft wirbeln – im Alltag das Skateboard, auf welchem er so einige Tricks draufhat. 
+                    Stalkt mensch Jordan ein wenig genauer, sind Beweise dieser Skills auf so manchen Skate-Videos aufzuspüren.
+                    Die Band versorgt er nicht nur mit seinen tighten Rhythmen, sondern auch mit schwedischen Weingummi-Köstlichkeiten. 
+                    Darüber freuen sich die MaRe-Schleckermäulchen genauso wie die hungrigen Mäuse aus dem Probekeller.</p>
+            </div>
+            <img src="/assets/img/profilfotos/jordan.jpg" alt="Jordan Brusenbauch" title="Jordan Brusenbauch">
+        </div>
+        <div class="member">
+            <div>
+                <h2><span class="red">Karin Wein</span><span class="blue">meister</span></h2>
+                <h6>Abê, Alfaia, Apito, Gonguê, Mineiro, Vocals</h6>
+                <p>Karin, auch „Cabo“ genannt, macht nicht nur beim Abé spielen eine gute Figur – sie beherrscht beinahe jedes Instrument der Gruppe und mit ihrer starken Stimme 
+                    gehört sie zu den führenden SängerInnen der Band. 
+                    Wenn sie gelegentlich als Mestra die Gruppe anführt, zeigen sich ihre Fähigkeiten als motivierende Gruppenleiterin. Ein wahres Multitalent also!
+                    „Eine Frage...“ – nichts bleibt bei Cabo ungeklärt. 
+                    Die Mischung aus großem Know-How, Liebe fürs Detail, Humor und einer gehörigen Portion Bühnenpräsenz macht sie zu einem unverzichtbaren Mitglied von MaRe!</p>
+            </div>
+            <img src="/assets/img/profilfotos/karin.jpg" alt="Karin Weinmeister" title="Karin Weinmeister">
+        </div>
+        <div class="member">
+            <div>
+                <h2><span class="red">Lena Kas</span><span class="blue">tner</span></h2>
+                <h6>Abê, Alfaia, Gonguê, Mineiro, Vocals</h6>
+                <p>Lena ist nicht nur eines unserer Band Urgesteine, sondern auch unsere Finanzministerin, St. Pölten-Repräsentantin und Frequency-Beauftragte. 
+                    Ihr unaufgeregter und natürlicher Zugang zur Musik zeigt sich darin, wie spielend und selbstverständlich sie Abê, Gonguê und Alfaia meisterte und sie obendrein
+                    noch eine unserer schönsten Stimmen am Mikro hat. 
+                    Auch nach langer gemeinsamer Zeit schafft sie es trotz Job + Ausbildung noch ein integraler Bestandteil der Band zu sein und dabei auch noch allen ein 
+                    Lächeln ins Gesicht zu zaubern.</p>
+            </div>
+            <img src="/assets/img/profilfotos/lena.jpg" alt="Lena Kastner" title="Lena Kastner">
+        </div>
+        <div class="member">
+            <div>
+                <h2><span class="red">Neslih</span><span class="blue">an Minaz</span></h2>
+                <h6>Alfaia</h6>
+                <p>Nesli is afoch a geile Sau!</p>
+            </div>
+            <img src="assets/img/MaReSticker.png" alt="MaRe Logo">
+
+        </div>
+        <div class="member">
+            <div>
+                <h2><span class="red">Nicola</span><span class="blue">i Toth</span></h2>
+                <h6>Alfaia, Vocals</h6>
+                <p>
+                    Nico Toth, ist seit Frühjahr 2020 bei den MaRe’s. Angeworben wurde er von Nr. 1 Headhunter Pata im Jazzclub Porgy&Bess 
+                    (Szene: „Es war eine neblige Herbstnacht ’19, Menschen jeglicher Couleur tummeln sich bei angenehmen Klängen der Band im stickigen Club. 
+                    Patrick „The Pata“ Hutter tritt aus der Bühnentür, sein Blick schweift durch den überquellenden Raum…“). Doch zurück zu Nico: 
+                    Er glänzt als wohl bestaussehenster Alfaia-Spieler, wobei seine fließenden Bewegungen, einer japanischen Kata gleichend, immer wieder seine 
+                    jahrzehntelange Erfahrung im Karate erahnen lassen. Außerdem singt er fabelhaft und beherrscht ganz nebenbei auch noch E-Gitarre und E-Bass. 
+                    Er ist der zukünftige Band-Physiotherapeut und arbeitet schon jetzt unermüdlich daran etwaige Verspannungen innerhalb der Band zu lösen.
+                </p>
+            </div>
+            <img src="/assets/img/profilfotos/nico.jpg" alt="Nicolai Toth" title="Nicolai Toth">
+        </div>
+        <div class="member">
+            <div>
+                <h2><span class="red">Pat</span><span class="blue">rick Huter</span></h2>
+                <h6>Abê, Alfaia, Atabaque, Apito, Caixa, Gonguê, Mineiro, Vocals</h6>
+                <p>Pata ist unser Mestre, der nicht nur viel Zeit, sondern auch viel Herz in unsere Band und Musik steckt. Er liebt gemütliche Runden unter Freunden, alle Hunde und die Bühne.
+                    Über seine zentrale Aufgabe als Mestre hinaus, wirkt er auch in vielen anderen Bands mit. Als versierter Drummer, dem beim Polymetrisch-Gehen (ja das kann man machen!) nie langweilig wird, profitiert MaRe erheblich von seinem Wissen und seiner Expertise. Am besten zu begutachten bei seiner neuesten Band turist!
+                    Typischer Schlagzeuger könnte man also sagen, aber falsch gedacht: Er singt und rappt auch noch bei MaRe! 
+                    Als Bandleader und künstlerischer Leiter widmet er sich der Gruppe mit Hirn und Herz und gibt auf die Mitglieder acht wie ein Hirtenhund auf seine Herde. Er vergisst nie die Wichtigkeit einer gesunden Bandatmosphäre und macht sich viele Gedanken über das Wohlergehen der Band und ihrer Mitglieder. Warmherzig und mit viel Schmäh leitet er unsere Proben, erheitert die Stimmung und behält trotzdem den Fokus.
+                    Neben seinem Beruf als Schlagzeuger, DJ und Pädagoge ist er hauptberuflich Pata!</p>
+            </div>
+            <img src="/assets/img/profilfotos/pata.jpg" alt="Patrick Huter" title="Patrick Huter">
+        </div>
+        <div class="member">
+            <div>
+                <h2><span class="red">Paul Gu</span><span class="blue">lewycz</span></h2>
+                <h6>Alfaia, Gonguê, Vocals</h6>
+                <p>
+                    Paul ist wahres Multitalent, er spielt Alfaia, Gonguê, Abê, Cavaquinho und Bass und noch dazu kann er auch gut singen. Zur Band kam er schon vor längerer Zeit im Jahr 2012. Das Schönste für Paul ist es, jeden Montag mit einer Gruppe großartiger Menschen packende Musik zu spielen und gemeinsam mit ihnen in den Flow des Maracatu zu kommen. Ihn zeichnet seine herzliche, umsorgende, gewissenhafte und ehrliche Art aus. Paul hat immer ein offenes Ohr, versorgt die Band während den Proben mit wichtigen Nährstoffen in Form von Manner Schnitten und lässt die Sau zum richtigen Zeitpunkt raus. Und wenn es manchmal Aufgaben in der Band gibt, die keiner so richtig gern machen will, kümmert sich oft Paul um sie.
+                </p>
+            </div>
+            <img src="/assets/img/profilfotos/paul.jpg" alt="Paul Gulewycz" title="Paul Gulewycz">
+        </div>
+        <div class="member">
+            <div>
+                <h2><span class="red">Sophie Zeh</span><span class="blue">etmayer</span></h2>
+                <h6>Alfaia, Vocals</h6>
+                <p>Sophie mag an MaRe alles, was dazugehört: Sie genießt - neben dem gemeinsamen Spielen - das Einsingen vor Konzerten, genauso wie das Pflegen von Instrumenten und das Kaufen von Süßigkeiten für die Band. Sie ist seit 2015 Teil der Band, als sie durch eine Übung am Institut für Musikwissenschaft das erste Mal mit Maracatu in Kontakt kam und diese Musik weiter verfolgen wollte. 
+                    Sophie ist unser Urgestein an der Alfaia, weshalb auch die kompliziertesten Beats für sie ein Kinderspiel sind. Und auch dazu singen kann sie problemlos. Nebenbei versorgt sie uns auch immer wieder mit wissenschaftlichen Inputs zu Maracatu und ist das Gewissen der Band. 
+                    „MaRe bedeutet für mich Zeit mit Menschen, die ich liebe zu verbringen und zugleich mit ihnen etwas Kreatives und Produktives zu machen“, sagt sie über die Band.</p>
+            </div>
+            <img src="/assets/img/profilfotos/sophie.jpg" alt="Sophie Zehetmayer" title="Sophie Zehetmayer">
+        </div>
+        <blockquote>
+            <h4>You are motivated</h4>
+            <p>  not only to <strong>dance</strong>, but also to <strong>play</strong>? <br> We are happy to welcome new members of the Band! <br> <br>
+                Feel free to contact us for our first session together: <em>info@m-renascente.at</em></p>
+           
+        </blockquote>
+
+    </div>
+    <div id="imprint" class="content">
+        <h2><span class="red">Verantwortlich f</span><span class="blue">ür die Seite</span></h2>
+        <h5>Maracatu Renascente Kulturverein für Perkussions-Musik</h5>
+        <p>Osterleingasse 14/29</p>
+        <p>1150 Wien</p>
+        <p><strong>ZVR:</strong> 1942158439</p>
+        <p>maracatu.renascente(at)gmail.com </p>
+    </div>
+
     </main>
     <footer>
         <div class="social">
             <a>info@m-renascente.at</a>
-            <a href="https://www.facebook.com/MaracatuRenascente/" title="Maracatu Renascente on facebook"><img src="/mare/assets/img/Facebook_Logo_Primary.png" alt="Facebook Link"></a>
-            <a href="https://www.instagram.com/mare_maracaturenascente/" title="Maracatu Renascente on Instagram"><img src="/mare/assets/img/insta_icon.png" alt="Instagram Link"></a>
-            <a href="https://www.youtube.com/@maracaturenascente" title="Maracatu Renascente on YouTube"><img src="/mare/assets/img/yt_icon.png" alt="YouTube Link"></a>
+            <a href="https://www.facebook.com/MaracatuRenascente/" title="Maracatu Renascente on facebook"><img src="/assets/img/Facebook_Logo_Primary.png" alt="Facebook Link"></a>
+            <a href="https://www.instagram.com/mare_maracaturenascente/" title="Maracatu Renascente on Instagram"><img src="/assets/img/insta_icon.png" alt="Instagram Link"></a>
+            <a href="https://www.youtube.com/@maracaturenascente" title="Maracatu Renascente on YouTube"><img src="/assets/img/yt_icon.png" alt="YouTube Link"></a>
         </div>
         <div class="policy">
-            <ul>
-                <li><a href="">Datenschutz</a></li>
-                <li><a href="">Impressum</a></li>
+            <ul class="nav">
+                <li for="policy">Datenschutz</li>
+                <li for="imprint">Impressum</li>
             </ul>
         </div>
 
