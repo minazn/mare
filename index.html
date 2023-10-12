@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maracatu Renascente</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/mare/assets/style.css">
 </head>
 <body>
     <div id="hamburger">
@@ -19,10 +16,11 @@
     <div id="banner"></div>
     <nav class="nav">
         <ul>
-            <li for="home" class="active logo-trigger">Home</li>
+            <li for="home" class="active logo-trigger">Startseite</li>
             <li for="band" class="more-info-trigger">Band</li>
-            <li for="home"><a for="home" href="#weplayed">Concerts</a></li>
-            <li id="contact">Contact: <small>info@m-renascente.at</small></li>
+            <li for="home"><a for="home" href="#weplayed">Konzerte</a></li>
+            <li id="contact">Kontakt: <small>maracatu.renascente@gmail.com</small></li>
+            <li id="language"><a href="indexEN.html">EN</a></li>
         </ul>
     </nav>
     <img id="logo" src="/mare/assets/img/MaReSticker.png" alt="MaRe Logo"/>
@@ -37,14 +35,14 @@
             </h2>
         </div>
         
-        <button aria-describedby="upcoming"><a href="#upcoming">Upcoming Gigs</a></button>
+        <button aria-describedby="upcoming"><a href="#upcoming">Nächstes Konzert</a></button>
         <span id="upcoming"></span>       
     </header>
     <main>
         <div id="home" class="content active">
         <div class="emphasize" >
-            <h1 class="big">Concert</h1>
-            <h2 class="title">Upcoming</h2>
+            <h1 class="big">Konzert</h1>
+            <h2 class="title">Wir spielen bald</h2>
             <div class="item">
                 <p>26.10.2023, 20:00</p>
                 <h5>Fania Live, Gürtellinie 22-23, 1080 Wien</h5>
@@ -52,11 +50,15 @@
         </div>
         <section class="video-wrap">
             <div class="video">
-                <iframe src="https://www.youtube.com/embed/8zDg9JkjIOo?si=vRyguBH7KBD19tk4?&mute=1&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!--iframe src="https://www.youtube.com/embed/8zDg9JkjIOo?si=vRyguBH7KBD19tk4?&mute=1&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe-->
+                <video controls autoplay muted loop poster="/mare/assets/img/brno1.jpg">
+                    <source src="/mare/assets/img/200124_MaRe@porgy_kurz.mp4" type="video/mp4">
+                    Leider unterstützt dein Browser keine mp4 files.
+                </video> 
             </div>
             <div class="description">
-                <h2><span class="red"> We A</span><span class="blue">re</span></h2>
-                <p><strong>Musical direction:</strong> Patrick Huter</p>
+                <h2><span class="red"> Wir S</span><span class="blue">ind</span></h2>
+                <p class="ml0"><strong>Musikalische Leitung:</strong> Patrick Huter</p>
                 <table>
                     <tbody>
                         <tr>
@@ -105,25 +107,12 @@
                         </tr>
                     </tbody>
                 </table>
-                <!--ul>
-                    <li>Anna Rosenkranz | Abê, Alfaia, Vocals</li>
-                    <li>Daniel Piringer | Alfaia</li>
-                    <li>David Bergstötter | Alfaia, Gonguê</li>
-                    <li>Jordan Brusenbauch | Caixa</li>
-                    <li>Karin Weinmeister | Abê, Alfaia, Apito, Gonguê, Mineiro, Vocals</li>
-                    <li>Lena Kastner | Abê, Alfaia, Gonguê, Mineiro, Vocals</li>
-                    <li>Neslihan Minaz | Alfaia</li>
-                    <li>Nicolai Toth | Alfaia, Vocals</li>
-                    <li>Patrick Huter | Abê, Alfaia, Atabaque, Apito, Caixa, Gonguê, Mineiro, Vocals</li>
-                    <li>Paul Gulewycz | Alfaia, Gonguê, Vocals</li>
-                    <li>Sophie Zehetmayer | Alfaia, Vocals</li>
-                </ul-->
-                <button id="more-info">more info</button>
+                <button id="more-info">mehr zur Band</button>
             </div>
         </section>
         <section id="weplayed">
-            <h2><span class="red">We pla</span><span class="blue">yed</span></h2>
-            <h6>and will continue</h6>
+            <h2><span class="red">Wir wa</span><span class="blue">ren</span></h2>
+            <h6>und bleiben auf der Bühne</h6>
             <!--p id="contact-bookings"><a title="Maracatu booking">Contact for booking</a></p-->
             <div id="concerts-wrap" class="relative">
                 <ul id="year-list">
@@ -142,165 +131,165 @@
                 </ul>
                 <div id="y2023" class="active concert-list">
                     <ul>
-                        <li>26.10. | <strong>MaRe @ FaniaLive</strong> Fania Live, Vienna</li>
+                        <li>26.10. | <strong>MaRe @ FaniaLive</strong> Fania Live, Wien</li>
                         <li>05.08. | <strong>Brazil Fest</strong>, Brno</li>
-                        <li>30.06. | <strong>Mondscheingassen Fešta</strong>, Neubau, Vienna</li>
-                        <li>30.06. | <strong>MuWi Fest</strong>, Campus AAKH, Vienna</li>
-                        <li>03.04. | <strong>12. Wiener RADpaRADe</strong>, Staatsoper, Vienna</li>
+                        <li>30.06. | <strong>Mondscheingassen Fešta</strong>, Neubau, Wien</li>
+                        <li>30.06. | <strong>MuWi Fest</strong>, Campus AAKH, Wien</li>
+                        <li>03.04. | <strong>12. Wiener RADpaRADe</strong>, Staatsoper, Wien</li>
                     </ul>
                 </div>
                 <div id="y2022" class="concert-list">
                     <ul>
                         <li>10.09. | <strong>Wedding Party</strong>(private), Carinthia</li>
-                        <li>06.08. | <strong>Muito axé - 10 Jahre MaRe</strong>, Sargfabrik, Vienna</li>
-                        <li>01.07. | <strong>MuWi Fest</strong>, Campus AAKH, Vienna</li>
-                        <li>18.06. | <strong>Gleichklangfest</strong>, Alsergrund, Vienna</li>
-                        <li>03.04. | <strong>11. Wiener RADpaRADe</strong>, Urania, Vienna</li>
+                        <li>06.08. | <strong>Muito axé - 10 Jahre MaRe</strong>, Sargfabrik, Wien</li>
+                        <li>01.07. | <strong>MuWi Fest</strong>, Campus AAKH, Wien</li>
+                        <li>18.06. | <strong>Gleichklangfest</strong>, Alsergrund, Wien</li>
+                        <li>03.04. | <strong>11. Wiener RADpaRADe</strong>, Urania, Wien</li>
                     </ul>
                 </div>
                 <div id="y2021" class="concert-list">
                     <ul>
-                        <li>17.11. | Bird Release-Party (cancelled), Fania Live, Vienna</li>
-                        <li>27.10. | <strong>20 Jahre JobTRANSFAIR</strong>, Odeon, Vienna</li>
-                        <li>22.09. | <strong>"Abend der offenen Gesellschaft"</strong>, Albert Schweizer Haus, Vienna</li>
-                        <li>17.09. | <strong>Gleichklangfest</strong>, Arne-Carlsson-Park, Vienna</li>
+                        <li>17.11. | Bird Release-Party (cancelled), Fania Live, Wien</li>
+                        <li>27.10. | <strong>20 Jahre JobTRANSFAIR</strong>, Odeon, Wien</li>
+                        <li>22.09. | <strong>"Abend der offenen Gesellschaft"</strong>, Albert Schweizer Haus, Wien</li>
+                        <li>17.09. | <strong>Gleichklangfest</strong>, Arne-Carlsson-Park, Wien</li>
                         <li>15.-17.07. | <strong>Linzer Pflasterspektakel </strong>, Linz</li>
-                        <li>02.07. | <strong>Mondscheingassen Fešta </strong>, Vienna</li>
-                        <li>03.04. | <strong>10. Wiener RADpaRADe</strong>, Urania, Vienna</li>
+                        <li>02.07. | <strong>Mondscheingassen Fešta </strong>, Wien</li>
+                        <li>03.04. | <strong>10. Wiener RADpaRADe</strong>, Urania, Wien</li>
                     </ul>
                 </div>
                 <div id="y2020" class="concert-list">
                     <ul>
                         <li>03.10. | <strong>4. Internationaler Kärnten Marathon</strong>, Region Feldkirch - Ossiacher See, Carinthia</li>
-                        <li>03.09. | Freihausviertelfest (cancelled) , Schleifmühlgasse, Vienna</li>
-                        <li>06.06. |  Simmeringer Straßenfest (cancelled), Vienna</li>
-                        <li>29.03. | 9. Wiener RADpaRADe (cancelled), Urania, Vienna</li>
-                        <li>24.01. | <strong>Spitting Ibex "Love Hate Fear Fate"</strong> (Album Release), Porgy & Bess, Vienna</li>
+                        <li>03.09. | Freihausviertelfest (cancelled) , Schleifmühlgasse, Wien</li>
+                        <li>06.06. |  Simmeringer Straßenfest (cancelled), Wien</li>
+                        <li>29.03. | 9. Wiener RADpaRADe (cancelled), Urania, Wien</li>
+                        <li>24.01. | <strong>Spitting Ibex "Love Hate Fear Fate"</strong> (Album Release), Porgy & Bess, Wien</li>
                     </ul>
                 </div>
                 <div id="y2019" class="concert-list">
                     <ul>
-                        <li>22.11. | <strong>MaRe 7 Anos</strong>, Fania Live, Vienna</li>
-                        <li>05.10. | <strong>Simmeringer Straßenfest</strong>, Odeon, Vienna</li>
+                        <li>22.11. | <strong>MaRe 7 Anos</strong>, Fania Live, Wien</li>
+                        <li>05.10. | <strong>Simmeringer Straßenfest</strong>, Odeon, Wien</li>
                         <li>22.09. | <strong>4. Internationaler Kärnten Marathon</strong>, Region Feldkirch - Ossiacher See, Carinthia</li>
                         <li>02.-03.08. | <strong>SambaMania 2019</strong>, Senj, Croatia</li>
                         <li>25.07. | <strong>PARTYCIPATION</strong>, Gänsendorf Süd</li>
-                        <li>28.06. | <strong>Romanistik- &amp; Musikwissenschafts-Fest</strong>, Campus AAKH, Vienna</li>
-                        <li>28.06. | <strong>Mondscheingassen Fešta</strong>, Vienna</li>
+                        <li>28.06. | <strong>Romanistik- &amp; Musikwissenschafts-Fest</strong>, Campus AAKH, Wien</li>
+                        <li>28.06. | <strong>Mondscheingassen Fešta</strong>, Wien</li>
                         <li>09.06. | <strong>Karneval der Kulturen</strong>, Berlin</li>
-                        <li>31.03. | <strong>8. Wiener RADpaRADe</strong>, Vienna</li>
-                        <li>12.01. | <strong>6 Jahre MaRe</strong>, Fania Live, Vienna</li>
+                        <li>31.03. | <strong>8. Wiener RADpaRADe</strong>, Wien</li>
+                        <li>12.01. | <strong>6 Jahre MaRe</strong>, Fania Live, Wien</li>
                     </ul>
                 </div>
                 <div id="y2018" class="concert-list">
                     <ul>
-                        <li>10.11. | <strong>BrasilFest Vienna</strong>, Vienna</li>
-                        <li>06.10. | <strong>Simmeringer Straßenfest</strong>, Vienna</li>
+                        <li>10.11. | <strong>BrasilFest Wien</strong>, Wien</li>
+                        <li>06.10. | <strong>Simmeringer Straßenfest</strong>, Wien</li>
                         <li>29.09. | <strong>Höfefest</strong>, St. Pölten</li>
-                        <li>15.09. | <strong>STREETLIFE Festival 2018</strong>, Babenbergerstraße, Vienna</li>
+                        <li>15.09. | <strong>STREETLIFE Festival 2018</strong>, Babenbergerstraße, Wien</li>
                         <li>09.08. | <strong>Wedding Party</strong> (private)</li>
                         <li>27.-28.07. | <strong>SambaMania 2018</strong>, Senj, Croatia</li>
                         <li>19.-21.07 | <strong>32. Linzer Pflasterspektakel</strong>, Linz</li>
-                        <li>30.06. | <strong>Freihausviertelfest</strong>, Schleifmühlgasse, Vienna</li>
-                        <li>29.06. | <strong>MuWi Fest</strong>, Campus AAKH (Hof 9), Vienna</li>
-                        <li>16.06. | <strong>Saturdance</strong>, Brunnenpassage, Vienna</li>
-                        <li>16.06. | <strong>StraßenKunstFest</strong>, Yppenplatz, Vienna</li>
-                        <li>02.06. | <strong>Simmeringer Straßenfest</strong>, Vienna</li>
-                        <li>26.05. | <strong>Südwind Straßenfestt</strong>, Campus AAKH (Hof 1), Vienna</li>
-                        <li>15.02. | <strong>Mandando Brasa Trio & Maracatú Renascente</strong>, Fania Live, Vienna</li>
+                        <li>30.06. | <strong>Freihausviertelfest</strong>, Schleifmühlgasse, Wien</li>
+                        <li>29.06. | <strong>MuWi Fest</strong>, Campus AAKH (Hof 9), Wien</li>
+                        <li>16.06. | <strong>Saturdance</strong>, Brunnenpassage, Wien</li>
+                        <li>16.06. | <strong>StraßenKunstFest</strong>, Yppenplatz, Wien</li>
+                        <li>02.06. | <strong>Simmeringer Straßenfest</strong>, Wien</li>
+                        <li>26.05. | <strong>Südwind Straßenfestt</strong>, Campus AAKH (Hof 1), Wien</li>
+                        <li>15.02. | <strong>Mandando Brasa Trio & Maracatú Renascente</strong>, Fania Live, Wien</li>
                     </ul>
                 </div>
                 <div id="y2017" class="concert-list">
                     <ul>
-                        <li>25.11. | <strong>5 Jahre MaRe</strong>, Fania Live, Vienna</li>
-                        <li>10.11. | <strong>Café Olge Sanchez Release Party</strong>, Schwarzberg, Vienna</li>
-                        <li>02.09. | <strong>Encanta Brasil</strong>, Fania Live, Vienna</li>
+                        <li>25.11. | <strong>5 Jahre MaRe</strong>, Fania Live, Wien</li>
+                        <li>10.11. | <strong>Café Olge Sanchez Release Party</strong>, Schwarzberg, Wien</li>
+                        <li>02.09. | <strong>Encanta Brasil</strong>, Fania Live, Wien</li>
                         <li>28.-30.07 | <strong>SambaMania 2017</strong>, Senj, Croatia</li>
-                        <li>30.06. | <strong>MuWi Fest</strong>, Campus AAKH (Hof 9), Vienna</li>
-                        <li>30.06. | <strong>Mondscheingassen Fešta</strong>, Mondscheingasse, Vienna</li>
-                        <li>03.06. | <strong>Simmeringer Straßenfest</strong>, Vienna</li>
-                        <li>19.05. | <strong>¡Sonido Tropical!</strong>, Fania Live, Vienna</li>
-                        <li>02.04. | <strong>7. Wiener RADpaRADe</strong>, Vienna</li>
-                        <li>09.03. | <strong>Ethnofest</strong>, Fluc, Vienna</li>
+                        <li>30.06. | <strong>MuWi Fest</strong>, Campus AAKH (Hof 9), Wien</li>
+                        <li>30.06. | <strong>Mondscheingassen Fešta</strong>, Mondscheingasse, Wien</li>
+                        <li>03.06. | <strong>Simmeringer Straßenfest</strong>, Wien</li>
+                        <li>19.05. | <strong>¡Sonido Tropical!</strong>, Fania Live, Wien</li>
+                        <li>02.04. | <strong>7. Wiener RADpaRADe</strong>, Wien</li>
+                        <li>09.03. | <strong>Ethnofest</strong>, Fluc, Wien</li>
                     </ul>
                 </div>
                 <div id="y2016" class="concert-list">
                     <ul>
-                        <li>17.12. | <strong>4 Jahre MaRe</strong>, Fania Live, Vienna</li>
-                        <li>11.11. | <strong>Wiener Rotkreuz Ball</strong>, Rathaus, Vienna</li>
-                        <li>29.10. | Kramladen, Vienna</li>
-                        <li>09.09. | <strong>Buskers Festival 2016</strong>, Karlsplatz , Vienna</li>
-                        <li>03.09. | <strong>Sommerfest Grellgasse</strong>, Vienna</li>
-                        <li>02.09. | <strong>100 Jahre Naschmarkt</strong>, Naschmarkt, Vienna</li>
+                        <li>17.12. | <strong>4 Jahre MaRe</strong>, Fania Live, Wien</li>
+                        <li>11.11. | <strong>Wiener Rotkreuz Ball</strong>, Rathaus, Wien</li>
+                        <li>29.10. | Kramladen, Wien</li>
+                        <li>09.09. | <strong>Buskers Festival 2016</strong>, Karlsplatz , Wien</li>
+                        <li>03.09. | <strong>Sommerfest Grellgasse</strong>, Wien</li>
+                        <li>02.09. | <strong>100 Jahre Naschmarkt</strong>, Naschmarkt, Wien</li>
                         <li>28.-30.07 | <strong>SambaMania 2016</strong>, Senj, Croatia</li>
                         <li>21.07. | <strong>PARTYCIPATION</strong>, Gänsendorf Süd</li>
-                        <li>16.07. | <strong>MARACATU RENASCENTE supporting EMERSOUND</strong>, Fania Live, Vienna</li>
+                        <li>16.07. | <strong>MARACATU RENASCENTE supporting EMERSOUND</strong>, Fania Live, Wien</li>
                         <li>16.07. | <strong>Sommerfest</strong>, Vinzenz Pauli, St. Pölten</li>
-                        <li>02.07. | <strong>Freihausviertelfest</strong>, Schleifmühlgasse, Vienna</li>
-                        <li>25.05. | <strong>Sonido Tropical</strong>, Kramladen, Vienna</li>
-                        <li>21.05. | <strong>StraßenKunstFest</strong>, Yppenplatz, Vienna</li>
-                        <li>04.03. | <strong>6. Wiener RADpaRADe</strong>, Praterstern, Vienna</li>
-                        <li>10.03. | <strong>Ethnofest</strong>, Fluc, Vienna</li>
+                        <li>02.07. | <strong>Freihausviertelfest</strong>, Schleifmühlgasse, Wien</li>
+                        <li>25.05. | <strong>Sonido Tropical</strong>, Kramladen, Wien</li>
+                        <li>21.05. | <strong>StraßenKunstFest</strong>, Yppenplatz, Wien</li>
+                        <li>04.03. | <strong>6. Wiener RADpaRADe</strong>, Praterstern, Wien</li>
+                        <li>10.03. | <strong>Ethnofest</strong>, Fluc, Wien</li>
                     </ul>
                 </div>
                 <div id="y2015" class="concert-list">
                     <ul>
-                        <li>11.12. | <strong>3 Jahre MaRe</strong>, Fania Live, Vienna</li>
-                        <li>12.-13.09. | <strong>STREETLIFE festival 2015</strong>, Babenbergerstraße , Vienna</li>
-                        <li>11.-13.09. | <strong>Buskers Festival 2015</strong>, Karlsplatz, Vienna</li>
+                        <li>11.12. | <strong>3 Jahre MaRe</strong>, Fania Live, Wien</li>
+                        <li>12.-13.09. | <strong>STREETLIFE festival 2015</strong>, Babenbergerstraße , Wien</li>
+                        <li>11.-13.09. | <strong>Buskers Festival 2015</strong>, Karlsplatz, Wien</li>
                         <li>24.-25.07 | <strong>SambaMania 2015</strong>, Senj, Croatia</li>
                         <li>23.07 | <strong>Samba Festival 2015</strong>, Lopar , Croatia</li>
-                        <li>26.06. | <strong>Kunstgeschichte-Party</strong>, Campus AAKH (Hof 9) , Vienna</li>
-                        <li>21.06. | <strong>5. Wiener RADpaRADe</strong>, Ringstraße, Vienna</li>
-                        <li>19.06. | <strong>Ethnofestival</strong>, Campus AAKH (Hof 7), Vienna</li>
-                        <li>13.06. | <strong>Street Art Festival Brunnenmarkt</strong>, Yppenplatz, Vienna</li>
+                        <li>26.06. | <strong>Kunstgeschichte-Party</strong>, Campus AAKH (Hof 9) , Wien</li>
+                        <li>21.06. | <strong>5. Wiener RADpaRADe</strong>, Ringstraße, Wien</li>
+                        <li>19.06. | <strong>Ethnofestival</strong>, Campus AAKH (Hof 7), Wien</li>
+                        <li>13.06. | <strong>Street Art Festival Brunnenmarkt</strong>, Yppenplatz, Wien</li>
                         <li>15.-16.05 | <strong>LINZFEST 2015</strong>, Donaupark, Linz</li>
-                        <li>18.04. | <strong>¡Sonido Tropical!</strong>, Fania Live, Vienna</li>
-                        <li>16.01. | <strong>Ethnofest</strong>, EKH, Vienna</li>
+                        <li>18.04. | <strong>¡Sonido Tropical!</strong>, Fania Live, Wien</li>
+                        <li>16.01. | <strong>Ethnofest</strong>, EKH, Wien</li>
                     </ul>
                 </div>
                 <div id="y2014" class="concert-list">
                     <ul>
-                        <li>29.11. | <strong>Andy Lee's Birthdayparty</strong>, Kulturverein Einbaumöbel, Vienna</li>
-                        <li>21.11. | <strong>Album Celebration, support for The Puzzle People Project</strong>, TüWi, Vienna</li>
-                        <li>12.11. | <strong>Free your Mind! - Das PsychologieFest</strong>, WERK , Vienna</li>
-                        <li>22.09. | <strong>Rasen am Ring</strong>, Ringstraße , Vienna</li>
-                        <li>05.-07.09. | <strong>Buskers Festival 2014</strong>, Karlsplatz, Vienna</li>
-                        <li>05.09. | <strong>Street festival 2014</strong>, Reindorfgasse, Vienna</li>
+                        <li>29.11. | <strong>Andy Lee's Birthdayparty</strong>, Kulturverein Einbaumöbel, Wien</li>
+                        <li>21.11. | <strong>Album Celebration, support for The Puzzle People Project</strong>, TüWi, Wien</li>
+                        <li>12.11. | <strong>Free your Mind! - Das PsychologieFest</strong>, WERK , Wien</li>
+                        <li>22.09. | <strong>Rasen am Ring</strong>, Ringstraße , Wien</li>
+                        <li>05.-07.09. | <strong>Buskers Festival 2014</strong>, Karlsplatz, Wien</li>
+                        <li>05.09. | <strong>Street festival 2014</strong>, Reindorfgasse, Wien</li>
                         <li>24.07. | <strong>PARTYCIPATION</strong>, Gänsendorf Süd</li>
-                        <li>14.06. | <strong>Street Art Festival Brunnenmarkt</strong>, Yppenplatz, Vienna</li>
-                        <li>13.06. | <strong>Campusfest</strong>, Campus AAKH, Vienna</li>
-                        <li>08.06. | <strong>Nosso Jogo</strong>, Karlsplatz, Vienna</li>
-                        <li>23.05. | <strong>Ethnofest</strong>, Campus AAKH, Vienna</li>
-                        <li>23.05. | <strong>Sommerfest des Kindergarten & Hort der Uni Wien</strong>, Campus AAKH, Vienna</li>
+                        <li>14.06. | <strong>Street Art Festival Brunnenmarkt</strong>, Yppenplatz, Wien</li>
+                        <li>13.06. | <strong>Campusfest</strong>, Campus AAKH, Wien</li>
+                        <li>08.06. | <strong>Nosso Jogo</strong>, Karlsplatz, Wien</li>
+                        <li>23.05. | <strong>Ethnofest</strong>, Campus AAKH, Wien</li>
+                        <li>23.05. | <strong>Sommerfest des Kindergarten & Hort der Uni Wien</strong>, Campus AAKH, Wien</li>
                         <li>16.-17.05 | <strong>LINZFEST 2015</strong>, Donaupark, Linz</li>
-                        <li>06.04. | <strong>4. Wiener RADpaRADe</strong>, Ringstraße, Vienna</li>
-                        <li>25.01. | <strong>Music For Malawi</strong>, Arena, Vienna</li>
-                        <li>18.01. | <strong>Masha's Farewell Party</strong> (private), Ost Bar, Vienna</li>
-                        <li>17.01. | <strong>Ethnofest</strong>, EKH, Vienna</li>
+                        <li>06.04. | <strong>4. Wiener RADpaRADe</strong>, Ringstraße, Wien</li>
+                        <li>25.01. | <strong>Music For Malawi</strong>, Arena, Wien</li>
+                        <li>18.01. | <strong>Masha's Farewell Party</strong> (private), Ost Bar, Wien</li>
+                        <li>17.01. | <strong>Ethnofest</strong>, EKH, Wien</li>
                     </ul>
                 </div>
                 <div id="y2013" class="concert-list">
                     <ul>
-                        <li>30.11. | <strong>Festa Meia Lua Inteira</strong>, Fania Live, Vienna</li>
-                        <li>28.11. | <strong>Soziologie-Fest</strong>, The Loft, Vienna</li>
-                        <li>16.11. | <strong>Dia da Consciencia Negra</strong>, Fania Live , Vienna</li>
+                        <li>30.11. | <strong>Festa Meia Lua Inteira</strong>, Fania Live, Wien</li>
+                        <li>28.11. | <strong>Soziologie-Fest</strong>, The Loft, Wien</li>
+                        <li>16.11. | <strong>Dia da Consciencia Negra</strong>, Fania Live , Wien</li>
                         <li>02.11. | <strong>Bauchklang&Guests</strong>, Festspielhaus, St. Pölten</li>
-                        <li>18.10. | <strong>¡Sonido Tropical!</strong>, Fania Live , Vienna</li>
-                        <li>13.09. | <strong>Street festival 2013</strong>, Reindorfgasse, Vienna</li>
-                        <li>06.09. | <strong>Street festival</strong>, Ottakringer Straße, Vienna</li>
+                        <li>18.10. | <strong>¡Sonido Tropical!</strong>, Fania Live , Wien</li>
+                        <li>13.09. | <strong>Street festival 2013</strong>, Reindorfgasse, Wien</li>
+                        <li>06.09. | <strong>Street festival</strong>, Ottakringer Straße, Wien</li>
                         <li>18.-20.07 | <strong>Pflasterspektakel Linz</strong>, Linz</li>
-                        <li>18.06. | <strong>MuWi Fest</strong>, Campus AAKH (Hof 9), Vienna</li>
-                        <li>15.06. | <strong>Street Art Festival Brunnenmarkt</strong>, Yppenplatz, Vienna</li>
-                        <li>16.05. | <strong>Ethnofest</strong>, Fluc, Vienna</li>
-                        <li>12.14. | <strong>¡Sonido Tropical!</strong>, WIRR Nachtcafe , Vienna</li>
-                        <li>31.01. | <strong>Local Heroes Vienna</strong>, Arena, Vienna</li>
-                        <li>17.01. | <strong>Ethnofest</strong>, Fluc, Vienna</li>
+                        <li>18.06. | <strong>MuWi Fest</strong>, Campus AAKH (Hof 9), Wien</li>
+                        <li>15.06. | <strong>Street Art Festival Brunnenmarkt</strong>, Yppenplatz, Wien</li>
+                        <li>16.05. | <strong>Ethnofest</strong>, Fluc, Wien</li>
+                        <li>12.14. | <strong>¡Sonido Tropical!</strong>, WIRR Nachtcafe , Wien</li>
+                        <li>31.01. | <strong>Local Heroes Wien</strong>, Arena, Wien</li>
+                        <li>17.01. | <strong>Ethnofest</strong>, Fluc, Wien</li>
                     </ul>
                 </div>
                 <div id="y2012" class="concert-list">
                     <ul>
-                        <li>09.11. | <strong>Baile y Batuque</strong>, WIRR Nachtcafe, Vienna</li>
+                        <li>09.11. | <strong>Baile y Batuque</strong>, WIRR Nachtcafe, Wien</li>
                     </ul>
                 </div>
                 <div id="img-slider">
@@ -318,15 +307,18 @@
     <div id="band" class="content">
         <div class="head">
             <div>
-                <h2><span class="red">We a</span><span class="blue">re</span> <span class="red">off-Beat and you can</span> <span class="blue">DANCE</span> <span class="red">to it</span></h2>
+                <h2><span class="red">Wir sind of</span><span class="blue">f-Bea</span><span class="red">t und du kann<span class="blue">st d</span>azu</span> <span class="blue">TANZEN</span></h2>
                 <p>
-                    Our repertoire is based on the Afro-Brazilian music culture called Maracatu, which developed in Pernambuco (North-East Brazil) and has its roots in the musical traditions of African slaves.
+                    Die traditionelle afro-brasilianische Musikform Maracatu de Baque Virado stammt aus dem Bundesstaat Pernambuco im Nordosten Brasiliens.
+                    Es entstand auf den Straßen des Karnevals und wird mit Alfaias gespielt, großen Basstrommeln aus Holz. 
+                    Im Maracatu trifft polyphoner Gesang auf mitreißende Trommelrhythmen.
+                </p><br>
+                <p>Wir spielen brasilianisches Maracatu und präsentieren traditionelle Maracatu Toadas, sowie andere brasilianische Stile wie Coco, Afoxé, Ciranda,
+                    Mangue Beat und mehr. Unsere selbstkomponierten Lieder sowie Live-Improvisationen runden das Programm ab.</p><br>
+                <p>Wir spielen regelmäßig auf Straßen- & Stadtteilfesten sowie Sportevents in ganz Österreich und sind auch auf diversen Bühnen und Festivals präsent.
+                    Unser Auftritt reicht von Paraden und Freiluftaufführungen ohne technische Anforderungen bis hin zu Bühnenprogrammen mit mehrstimmigem Gesang.
                 </p>
-                <p class="fleft">
-                    Maracatu RENASCENTE is not the traditional (Maracatu de Baque Virado), but the experimental form of this style.​
-        Our music is based on instruments like alfaia (wooden bass drum), abê (gourd-shaker), caixa (snare-drum), timbal (hand-drum), gonguê (iron bell) and mineiro (shaker).
-        By adding other instruments and traditional genres like coco, forró, ciranda - sometimes even capoeira performances are part of our shows - as well as our own musical backgrounds, our repertoire is growing all the time 
-                </p>
+                
             </div>
             <!--div>
                 <img class="fright" src="/assets/img/MareKarin.jpg" alt="Karin in Brno">
@@ -339,7 +331,12 @@
             <div>
                 <h2><span class="red">Ann</span><span class="blue">a Rosenkranz</span></h2>
             <h6>Abê, Alfaia, Vocals</h6>
-            <p>Anna ist eine unglaublich quirlige Person, die jede Probe mit ihrer lustigen Art bereichert. Primär ist sie an der Alfaia zu finden, oft leiht sie uns aber auch ihre tolle Stimme für die eine oder andere Nummer. Spontane zweite oder dritte Stimmen singt sie dank ihrer Kreativität und ihrem Können mühelos und mit Freude. Anna hat Rhythmik studiert, spielt Gitarre und Kontrabass. Letzteren spielt sie in der Formation Wirrbel. Wirbel ist auch tatsächlich ein gutes Wort um Anna zu beschreiben: Sie strahlt und hat Energie wie ein kunterbunter Wirbelsturm.</p>
+            <p>Anna ist eine unglaublich quirlige Person, die jede Probe mit ihrer lustigen Art bereichert. Primär ist sie an der Alfaia zu finden,
+                 oft leiht sie uns aber auch ihre tolle Stimme für die eine oder andere Nummer. 
+                 Spontane zweite oder dritte Stimmen singt sie dank ihrer Kreativität und ihrem Können mühelos und mit Freude.
+                 Anna hat Rhythmik studiert, spielt Gitarre und Kontrabass. 
+                 Letzteren spielt sie in der Formation Wirrbel. Wirbel ist auch tatsächlich ein gutes Wort um Anna zu beschreiben: 
+                 Sie strahlt und hat Energie wie ein kunterbunter Wirbelsturm.</p>
             </div>
             <img src="/mare/assets/img/profilfotos/anna.jpg" alt="Anna Rosenkranz" title="Anna Rosenkranz">
             
@@ -348,7 +345,12 @@
             <div>
                 <h2><span class="red">Daniel Pi</span><span class="blue">ringer</span></h2>
                 <h6>Alfaia</h6>
-                <p>Daniel ist, wie er eben ist.</p>
+                <p>Unsere Band wird durch einen weiteren Schlagzeugspieler bereichert. Manchmal sucht Daniel, mit 2 Stickst auf seine Knie schlagend, nach neuen Rhythmen.
+                    Manchmal auch nur, um seinen Kopf frei zu bekommen. Seit Winter 2022 teilt er seine rhythmischen Skills auf der Alfaia. Wann immer Hilfe gebraucht wird,
+                    besteht Daniel auf seinen Einsatz - für jede Situation. Als Naschkatze hilft er der Band, Gesundes und Ungesundes zu verspeisen, damit für Neues nachgesorgt
+                    werden kann. Kein Wunder, dass ihm das Wohl der Menschen wichtig ist: er ist gelernter Psychiater. Über Daniel kann sich niemand lustig machen. Denn 
+                    Selbstironie und Eigenhumor gehören zu seiner einzigartigen Persönlichkeit.
+                </p>
             </div>
             <img src="/mare/assets/img/MaReSticker.png" alt="MaRe Logo">
 
@@ -408,7 +410,15 @@
             <div>
                 <h2><span class="red">Neslih</span><span class="blue">an Minaz</span></h2>
                 <h6>Alfaia</h6>
-                <p>Nesli is afoch a geile Sau!</p>
+                <p>Mit ihren hochentwickelten Informatikfähigkeiten durchschaut Nesli geschwind jeden Rhythmus. Schnell wird ein Algorithmus gefunden, wie Arme und Beine 
+                    effizient und stark spielen können. Hierbei hilft jahrelange Erfahrung mit anderen Schlaginstrumenten; im Ensemble ist es meist die Alfaia, die unter ihren
+                    Fingern bebt. Da auch das bestgeeichte Gehirn nach dem letzten Feinschliff an unserer Website einmal Ausgleich braucht, findet sie den in der Natur und 
+                    beglückt auch die Band gerne einmal mit einer selbstgepflanzten Rot-Rüben-Lasagne.        
+                    Obgleich gerade noch die Jüngste im Stammbaum von MaRe, ist Neslis gestrenge und großzügige Art, von selbstgeschöpfter Schokolade über frische Geschichten
+                    bis hin zu Capoeira-Spielen mit uns zu teilen, nicht wegzudenken.                   
+                    Unermüdlich werden von Nesli neue Fertigkeiten entdeckt und perfektioniert, bis sie auch den letzten in die Pfanne bzw. das Pandeiro hauen kann. Nimm dich 
+                    in Acht, denn wenn der Beat verklungen ist, wird auch dein Herz nicht verschlossen bleiben.
+                </p>
             </div>
             <img src="/mare/assets/img/MaReSticker.png" alt="MaRe Logo">
 
@@ -445,7 +455,11 @@
                 <h2><span class="red">Paul Gu</span><span class="blue">lewycz</span></h2>
                 <h6>Alfaia, Gonguê, Vocals</h6>
                 <p>
-                    Paul ist wahres Multitalent, er spielt Alfaia, Gonguê, Abê, Cavaquinho und Bass und noch dazu kann er auch gut singen. Zur Band kam er schon vor längerer Zeit im Jahr 2012. Das Schönste für Paul ist es, jeden Montag mit einer Gruppe großartiger Menschen packende Musik zu spielen und gemeinsam mit ihnen in den Flow des Maracatu zu kommen. Ihn zeichnet seine herzliche, umsorgende, gewissenhafte und ehrliche Art aus. Paul hat immer ein offenes Ohr, versorgt die Band während den Proben mit wichtigen Nährstoffen in Form von Manner Schnitten und lässt die Sau zum richtigen Zeitpunkt raus. Und wenn es manchmal Aufgaben in der Band gibt, die keiner so richtig gern machen will, kümmert sich oft Paul um sie.
+                    Paul ist wahres Multitalent, er spielt Alfaia, Gonguê, Abê, Cavaquinho und Bass und noch dazu kann er auch gut singen. 
+                    Zur Band kam er schon vor längerer Zeit im Jahr 2012. Das Schönste für Paul ist es, jeden Montag mit einer Gruppe großartiger Menschen packende Musik zu 
+                    spielen und gemeinsam mit ihnen in den Flow des Maracatu zu kommen. Ihn zeichnet seine herzliche, umsorgende, gewissenhafte und ehrliche Art aus. 
+                    Paul hat immer ein offenes Ohr, versorgt die Band während den Proben mit wichtigen Nährstoffen in Form von Manner Schnitten und lässt die Sau zum richtigen 
+                    Zeitpunkt raus. Und wenn es manchmal Aufgaben in der Band gibt, die keiner so richtig gern machen will, kümmert sich oft Paul um sie.
                 </p>
             </div>
             <img src="/mare/assets/img/profilfotos/paul.jpg" alt="Paul Gulewycz" title="Paul Gulewycz">
@@ -454,33 +468,43 @@
             <div>
                 <h2><span class="red">Sophie Zeh</span><span class="blue">etmayer</span></h2>
                 <h6>Alfaia, Vocals</h6>
-                <p>Sophie mag an MaRe alles, was dazugehört: Sie genießt - neben dem gemeinsamen Spielen - das Einsingen vor Konzerten, genauso wie das Pflegen von Instrumenten und das Kaufen von Süßigkeiten für die Band. Sie ist seit 2015 Teil der Band, als sie durch eine Übung am Institut für Musikwissenschaft das erste Mal mit Maracatu in Kontakt kam und diese Musik weiter verfolgen wollte. 
-                    Sophie ist unser Urgestein an der Alfaia, weshalb auch die kompliziertesten Beats für sie ein Kinderspiel sind. Und auch dazu singen kann sie problemlos. Nebenbei versorgt sie uns auch immer wieder mit wissenschaftlichen Inputs zu Maracatu und ist das Gewissen der Band. 
-                    „MaRe bedeutet für mich Zeit mit Menschen, die ich liebe zu verbringen und zugleich mit ihnen etwas Kreatives und Produktives zu machen“, sagt sie über die Band.</p>
+                <p>Sophie mag an MaRe alles, was dazugehört: Sie genießt - neben dem gemeinsamen Spielen - das Einsingen vor Konzerten, genauso wie das Pflegen von 
+                    Instrumenten und das Kaufen von Süßigkeiten für die Band. Sie ist seit 2015 Teil der Band, als sie durch eine Übung am Institut für Musikwissenschaft 
+                    das erste Mal mit Maracatu in Kontakt kam und diese Musik weiter verfolgen wollte. 
+                    Sophie ist unser Urgestein an der Alfaia, weshalb auch die kompliziertesten Beats für sie ein Kinderspiel sind. Und auch dazu singen kann sie problemlos. 
+                    Nebenbei versorgt sie uns auch immer wieder mit wissenschaftlichen Inputs zu Maracatu und ist das Gewissen der Band. 
+                    „MaRe bedeutet für mich Zeit mit Menschen, die ich liebe zu verbringen und zugleich mit ihnen etwas Kreatives und Produktives zu machen“, sagt sie über 
+                    die Band.</p>
             </div>
             <img src="/mare/assets/img/profilfotos/sophie.jpg" alt="Sophie Zehetmayer" title="Sophie Zehetmayer">
         </div>
         <blockquote>
-            <h4>You are motivated</h4>
-            <p>  not only to <strong>dance</strong>, but also to <strong>play</strong>? <br> We are happy to welcome new members of the Band! <br> <br>
-                Feel free to contact us for our first session together: <em>info@m-renascente.at</em></p>
+            <h4>Du bist motiviert</h4>
+            <p> nicht nur zum <strong>tanzen</strong>, sondern auch zu <strong>spielen</strong>? <br> Wir sind motiviert, neue Bandmitglieder aufzunehmen! <br> <br>
+                Zögere nicht und schreibe uns, um unser erstes Schnuppertraining zu vereinbaren: <em>maracatu.renascente@gmail.com</em></p>
            
         </blockquote>
 
     </div>
     <div id="imprint" class="content">
         <h2><span class="red">Verantwortlich f</span><span class="blue">ür die Seite</span></h2>
-        <h5>Maracatu Renascente Kulturverein für Perkussions-Musik</h5>
+        <h5>Maracatu Renascente</h5>
+        <p>Kulturverein für Perkussions-Musik</p>
         <p>Osterleingasse 14/29</p>
         <p>1150 Wien</p>
         <p><strong>ZVR:</strong> 1942158439</p>
         <p>maracatu.renascente(at)gmail.com </p>
     </div>
+    <div id="policy" class="content">
+        <h2><span class="red">Datens</span><span class="blue">chutzerklärung</span></h2>
+        Deine personenbezogenen Daten werden weder gespeichert, noch an Dritte weitergegeben. Lediglich, wenn du uns schriftlich kontaktierst, verwendenden wir Deine e-mail 
+        Adresse, um Dir eine Antwortmail zu schreiben.
+    </div>
 
     </main>
     <footer>
         <div class="social">
-            <a>info@m-renascente.at</a>
+            <a>maracatu.renascente@gmail.com</a>
             <a href="https://www.facebook.com/MaracatuRenascente/" title="Maracatu Renascente on facebook"><img src="/mare/assets/img/Facebook_Logo_Primary.png" alt="Facebook Link"></a>
             <a href="https://www.instagram.com/mare_maracaturenascente/" title="Maracatu Renascente on Instagram"><img src="/mare/assets/img/insta_icon.png" alt="Instagram Link"></a>
             <a href="https://www.youtube.com/@maracaturenascente" title="Maracatu Renascente on YouTube"><img src="/mare/assets/img/yt_icon.png" alt="YouTube Link"></a>
@@ -494,6 +518,6 @@
 
     </footer>
     <script  src="https://code.jquery.com/jquery-3.7.1.min.js"   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="  crossorigin="anonymous"></script>
-    <script src="/mare/assets/script.js" type="text/javascript"></script>
+    <script src="/mare/assets/script.js"></script> 
 </body>
 </html>
